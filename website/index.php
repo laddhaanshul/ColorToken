@@ -43,15 +43,15 @@ require_once __DIR__ . '/includes/header.php';
 
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-value">14</span>
+        <span class="stat-value">22</span>
         <span class="stat-label">Color Scales</span>
       </div>
       <div class="stat">
-        <span class="stat-value">154+</span>
+        <span class="stat-value">245</span>
         <span class="stat-label">Primitive Colors</span>
       </div>
       <div class="stat">
-        <span class="stat-value">80+</span>
+        <span class="stat-value">95</span>
         <span class="stat-label">Semantic Tokens</span>
       </div>
       <div class="stat">
