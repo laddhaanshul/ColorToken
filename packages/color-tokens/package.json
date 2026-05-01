@@ -77,12 +77,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/color-tokens.git",
+    "url": "https://github.com/laddhaanshul/ColorToken.git",
     "directory": "packages/color-tokens"
   },
-  "homepage": "https://github.com/your-org/color-tokens#readme",
+  "homepage": "https://colortokens.anshulladdha.in",
   "bugs": {
-    "url": "https://github.com/your-org/color-tokens/issues"
+    "url": "https://github.com/laddhaanshul/ColorToken/issues"
   },
   "author": "Color Tokens Contributors",
   "publishConfig": {

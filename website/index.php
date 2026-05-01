@@ -404,7 +404,7 @@ pnpm add @color-tokens/core</code></pre>
           <p>
             For React Native, the same import works &mdash; the package automatically resolves the
             native entry point. Check the
-            <a href="https://github.com/your-org/color-tokens" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/laddhaanshul/ColorToken" target="_blank" rel="noopener noreferrer">
               GitHub repository
             </a>
             for advanced usage patterns, theme switching, and more.

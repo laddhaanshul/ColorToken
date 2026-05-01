@@ -45,17 +45,17 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/your-org/color-tokens" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/laddhaanshul/ColorToken" target="_blank" rel="noopener noreferrer">
                 GitHub Repository
               </a>
             </li>
             <li>
-              <a href="https://github.com/your-org/color-tokens/issues" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/laddhaanshul/ColorToken/issues" target="_blank" rel="noopener noreferrer">
                 Report an Issue
               </a>
             </li>
             <li>
-              <a href="https://github.com/your-org/color-tokens/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/laddhaanshul/ColorToken/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
                 MIT License
               </a>
             </li>
@@ -65,9 +65,9 @@
         <div class="footer-links">
           <h4>Community</h4>
           <ul>
-            <li><a href="https://github.com/your-org/color-tokens/discussions" target="_blank" rel="noopener noreferrer">Discussions</a></li>
-            <li><a href="https://github.com/your-org/color-tokens/releases" target="_blank" rel="noopener noreferrer">Releases</a></li>
-            <li><a href="https://github.com/your-org/color-tokens/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></li>
+            <li><a href="https://github.com/laddhaanshul/ColorToken/discussions" target="_blank" rel="noopener noreferrer">Discussions</a></li>
+            <li><a href="https://github.com/laddhaanshul/ColorToken/releases" target="_blank" rel="noopener noreferrer">Releases</a></li>
+            <li><a href="https://github.com/laddhaanshul/ColorToken/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></li>
           </ul>
         </div>
       </div>

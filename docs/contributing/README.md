@@ -7,7 +7,7 @@ Thank you for your interest in contributing to `@color-tokens/core`! This docume
 To start contributing, fork the repository and clone it to your local machine. The project uses **npm workspaces** for monorepo management. Install all dependencies from the repository root:
 
 ```bash
-git clone https://github.com/your-org/color-tokens.git
+git clone https://github.com/laddhaanshul/ColorToken.git
 cd color-tokens
 npm install                    # install all workspaces
 cd packages/color-tokens

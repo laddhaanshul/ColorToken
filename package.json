@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "Monorepo for @color-tokens/core — a universal color token system for React and React Native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laddhaanshul/ColorToken.git"
+  },
+  "homepage": "https://colortokens.anshulladdha.in",
+  "bugs": {
+    "url": "https://github.com/laddhaanshul/ColorToken/issues"
+  },
   "workspaces": [
     "packages/*",
     "examples/*"

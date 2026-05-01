@@ -15,7 +15,8 @@ Welcome to the `@color-tokens/core` documentation hub. This folder contains deta
 ## Quick Links
 
 - **npm Package:** [@color-tokens/core](https://www.npmjs.com/package/@color-tokens/core)
-- **GitHub Repository:** [color-tokens](https://github.com/your-org/color-tokens)
+- **GitHub Repository:** [ColorToken](https://github.com/laddhaanshul/ColorToken)
+- **Website:** [colortokens.anshulladdha.in](https://colortokens.anshulladdha.in)
 - **PHP Promotional Site:** See `/website` directory
 - **Web Example:** See `/examples/web` directory
 - **React Native Example:** See `/examples/react-native` directory

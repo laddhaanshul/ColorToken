@@ -72,7 +72,7 @@ CSS custom properties in `css/style.css` under `:root` (light) and `[data-theme=
 
 ### Change GitHub / npm URLs
 
-Search and replace `https://github.com/your-org/color-tokens` across all files with your actual repository URL.
+Search and replace `https://github.com/laddhaanshul/ColorToken` across all files with your actual repository URL.
 
 ### Add new pages
 

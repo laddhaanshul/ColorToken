@@ -7,8 +7,9 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@color-tokens/core"><img src="https://img.shields.io/npm/v/@color-tokens/core.svg?style=flat-square" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/@color-tokens/core"><img src="https://img.shields.io/npm/dm/@color-tokens/core.svg?style=flat-square" alt="npm downloads"></a>
-  <a href="https://github.com/your-org/color-tokens/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@color-tokens/core.svg?style=flat-square" alt="license"></a>
+  <a href="https://github.com/laddhaanshul/ColorToken/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@color-tokens/core.svg?style=flat-square" alt="license"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.3+-blue.svg?style=flat-square" alt="TypeScript"></a>
+  <a href="https://colortokens.anshulladdha.in"><img src="https://img.shields.io/badge/Website-Live-brightgreen.svg?style=flat-square" alt="Website"></a>
 </p>
 
 ---
