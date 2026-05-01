@@ -1,0 +1,33 @@
+{
+  "name": "color-tokens-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for @color-tokens/core — a universal color token system for React and React Native",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.72.6"
+  },
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "build:core": "npm run build --workspace packages/color-tokens",
+    "clean": "npm run clean --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "keywords": [
+    "color-tokens",
+    "monorepo",
+    "design-tokens",
+    "react",
+    "react-native"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

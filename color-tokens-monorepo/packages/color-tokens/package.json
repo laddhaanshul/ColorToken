@@ -1,0 +1,92 @@
+{
+  "name": "@color-tokens/core",
+  "version": "1.0.0",
+  "description": "Universal color token system for React and React Native. 22 primitive color scales, 10 semantic token categories, light/dark themes, React Context provider, CSS variable injection, and 11 utility functions.",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "react-native": "dist/index.native.js",
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js",
+      "react-native": "./dist/index.native.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:native && npm run build:types",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:native": "tsc --project tsconfig.native.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "clean": "rm -rf dist",
+    "dev": "npm run build:esm -- --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/ --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "eslint": "^8.50.0",
+    "react": "^18.2.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "color",
+    "tokens",
+    "design-system",
+    "design-tokens",
+    "react",
+    "react-native",
+    "expo",
+    "theme",
+    "dark-mode",
+    "light-mode",
+    "color-provider",
+    "useTheme",
+    "useColorTokens",
+    "css-variables",
+    "accessibility",
+    "wcag",
+    "tailwind",
+    "tailwindcss",
+    "primitive-colors",
+    "semantic-colors"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/color-tokens.git",
+    "directory": "packages/color-tokens"
+  },
+  "homepage": "https://github.com/your-org/color-tokens#readme",
+  "bugs": {
+    "url": "https://github.com/your-org/color-tokens/issues"
+  },
+  "author": "Color Tokens Contributors",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

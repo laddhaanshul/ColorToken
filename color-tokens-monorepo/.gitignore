@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+!packages/*/node_modules/
+!examples/*/node_modules/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Test coverage
+coverage/
+
+# Cache
+.eslintcache
+.cache/
+.parcel-cache/
+
+# Package manager
+.npmrc.local
+
+new_code/
+setup-color-tokens-v2.sh
+setup-color-tokens-v3.sh
+setup-color-tokens.sh

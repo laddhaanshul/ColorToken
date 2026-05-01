@@ -1,0 +1,871 @@
+/* ================================================================== */
+/*  Reset & Base                                                       */
+/* ================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  line-height: 1.6;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ================================================================== */
+/*  App Shell                                                          */
+/* ================================================================== */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ct-background-primary, #ffffff);
+  color: var(--ct-foreground-primary, #111827);
+}
+
+/* ================================================================== */
+/*  Header                                                             */
+/* ================================================================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--ct-surface-elevated, #ffffff);
+  border-bottom: 1px solid var(--ct-border-default, #e5e7eb);
+  backdrop-filter: blur(12px);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header__logo {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ct-foreground-primary, #111827);
+}
+
+.header__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background-color: var(--ct-brand-primary-subtle, #eff6ff);
+  color: var(--ct-brand-primary, #2563eb);
+}
+
+/* ================================================================== */
+/*  Theme Toggle                                                       */
+/* ================================================================== */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  background-color: var(--ct-background-secondary, #f9fafb);
+  color: var(--ct-foreground-primary, #111827);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--ct-background-tertiary, #f3f4f6);
+  border-color: var(--ct-border-strong, #d1d5db);
+}
+
+.theme-toggle__icon {
+  font-size: 1.1rem;
+}
+
+/* ================================================================== */
+/*  Main                                                               */
+/* ================================================================== */
+
+.main {
+  flex: 1;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ================================================================== */
+/*  Sections                                                           */
+/* ================================================================== */
+
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: var(--ct-foreground-primary, #111827);
+}
+
+.section__desc {
+  font-size: 0.9rem;
+  color: var(--ct-foreground-secondary, #4b5563);
+  margin-bottom: 1.5rem;
+  max-width: 72ch;
+}
+
+.section__desc code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.82rem;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background-color: var(--ct-background-tertiary, #f3f4f6);
+  color: var(--ct-brand-primary, #2563eb);
+}
+
+/* ================================================================== */
+/*  Buttons                                                            */
+/* ================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1.5px solid transparent;
+}
+
+.btn--primary:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.btn--primary:active {
+  filter: brightness(0.95);
+  transform: translateY(0);
+}
+
+.btn--ghost:hover {
+  border-color: var(--ct-border-strong, #d1d5db);
+  background-color: var(--ct-background-tertiary, #f3f4f6);
+}
+
+/* ================================================================== */
+/*  CSS Variables Demo                                                 */
+/* ================================================================== */
+
+.css-vars-demo {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .css-vars-demo {
+    grid-template-columns: 1fr;
+  }
+}
+
+.css-vars-demo__card,
+.css-vars-demo__opacity {
+  padding: 1.75rem;
+  border-radius: 16px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  transition: all 0.3s ease;
+}
+
+.css-vars-demo__heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.css-vars-demo__heading code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+}
+
+.css-vars-demo__body {
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.65;
+}
+
+.css-vars-demo__body code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.82rem;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background-color: var(--ct-background-tertiary, #f3f4f6);
+  color: var(--ct-brand-primary, #2563eb);
+}
+
+.css-vars-demo__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Opacity strip */
+
+.opacity-strip {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.opacity-strip__item {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  min-height: 64px;
+  transition: background-color 0.3s ease;
+}
+
+/* ================================================================== */
+/*  Swatches                                                           */
+/* ================================================================== */
+
+.swatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  overflow: hidden;
+}
+
+.swatch:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+.swatch--sm {
+  width: 36px;
+  height: 36px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.swatch__label {
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================================================== */
+/*  Primitive Scales Grid                                              */
+/* ================================================================== */
+
+.scales-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.scale-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scale-row__name {
+  width: 64px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--ct-foreground-secondary, #4b5563);
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.scale-row__swatches {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* ================================================================== */
+/*  Status Grid                                                        */
+/* ================================================================== */
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1.5px solid;
+  transition: all 0.25s ease;
+}
+
+.status-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.status-card__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-card__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.status-card__hex {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+/* ================================================================== */
+/*  Brand Grid                                                         */
+/* ================================================================== */
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.5rem 1.25rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card:active {
+  transform: translateY(0);
+}
+
+.brand-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.brand-card__hex {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.brand-card__swatch-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 0.25rem;
+}
+
+.brand-card__mini {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ================================================================== */
+/*  Semantic Grid                                                      */
+/* ================================================================== */
+
+.semantic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.semantic-category {
+  border-radius: 14px;
+  padding: 1rem;
+  background-color: var(--ct-background-secondary, #f9fafb);
+  border: 1px solid var(--ct-border-subtle, #f3f4f6);
+  transition: all 0.3s ease;
+}
+
+.semantic-category:hover {
+  border-color: var(--ct-border-default, #e5e7eb);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.semantic-category__title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: var(--ct-foreground-secondary, #4b5563);
+}
+
+.semantic-category__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.semantic-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.semantic-chip:hover {
+  transform: scale(1.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.semantic-chip__name {
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 52px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================================================== */
+/*  Chart Demo                                                         */
+/* ================================================================== */
+
+.chart-demo {
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  transition: all 0.3s ease;
+}
+
+.chart-demo__bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  height: 200px;
+}
+
+.chart-demo__bar {
+  flex: 1;
+  border-radius: 8px 8px 4px 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  min-height: 20px;
+  transition: height 0.4s ease, background-color 0.3s ease;
+}
+
+.chart-demo__bar:hover {
+  filter: brightness(1.1);
+}
+
+/* ================================================================== */
+/*  Footer                                                             */
+/* ================================================================== */
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  border-top: 1px solid;
+  transition: all 0.3s ease;
+}
+
+/* ================================================================== */
+/*  Responsive                                                          */
+/* ================================================================== */
+
+/* ================================================================== */
+/*  Hooks Panel                                                        */
+/* ================================================================== */
+
+.hooks-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  background-color: var(--ct-background-secondary, #f9fafb);
+}
+
+.hooks-panel__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hooks-panel__heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ct-foreground-secondary, #4b5563);
+}
+
+.hooks-panel__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hook-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--ct-border-default, #e5e7eb);
+  background-color: var(--ct-background-primary, #ffffff);
+  transition: all 0.2s ease;
+}
+
+.hook-chip:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.hook-chip__label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ct-foreground-secondary, #4b5563);
+}
+
+.hook-chip__value {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78rem;
+  color: var(--ct-foreground-primary, #111827);
+  font-weight: 500;
+}
+
+/* ================================================================== */
+/*  Utility Swatches                                                  */
+/* ================================================================== */
+
+.util-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.util-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.util-swatch__color {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  transition: transform 0.15s ease;
+}
+
+.util-swatch__color:hover {
+  transform: scale(1.08);
+}
+
+.util-swatch__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.util-swatch__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ct-foreground-secondary, #4b5563);
+}
+
+.util-swatch__info code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.68rem;
+  color: var(--ct-foreground-primary, #111827);
+}
+
+/* ================================================================== */
+/*  Utility Table                                                      */
+/* ================================================================== */
+
+.util-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+}
+
+.util-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.util-table th,
+.util-table td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--ct-border-subtle, #f3f4f6);
+}
+
+.util-table th {
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ct-foreground-secondary, #4b5563);
+  background-color: var(--ct-background-secondary, #f9fafb);
+}
+
+.util-table td code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78rem;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background-color: var(--ct-background-tertiary, #f3f4f6);
+}
+
+/* ================================================================== */
+/*  JSON Block                                                         */
+/* ================================================================== */
+
+.json-block {
+  border-radius: 12px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  overflow: hidden;
+}
+
+.json-block__label {
+  padding: 0.6rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ct-foreground-secondary, #4b5563);
+  background-color: var(--ct-background-secondary, #f9fafb);
+  border-bottom: 1px solid var(--ct-border-default, #e5e7eb);
+}
+
+.json-block__code {
+  padding: 1rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  max-height: 300px;
+  overflow-y: auto;
+  color: var(--ct-foreground-primary, #111827);
+}
+
+/* ================================================================== */
+/*  createTheme Demo                                                   */
+/* ================================================================== */
+
+.create-theme-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.create-theme-demo__col {
+  padding: 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--ct-border-default, #e5e7eb);
+  background-color: var(--ct-background-secondary, #f9fafb);
+}
+
+.create-theme-demo__col h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.create-theme-demo__swatches {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.create-theme-demo__swatches .swatch {
+  width: 48px;
+  height: 48px;
+  font-size: 0.5rem;
+}
+
+.create-theme-demo__code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+  color: var(--ct-foreground-secondary, #4b5563);
+}
+
+/* ================================================================== */
+/*  Config Grid                                                        */
+/* ================================================================== */
+
+.config-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .config-grid,
+  .create-theme-demo {
+    grid-template-columns: 1fr;
+  }
+
+  .util-swatches {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ================================================================== */
+/*  Responsive                                                         */
+/* ================================================================== */
+
+@media (max-width: 640px) {
+  .header__inner {
+    padding: 0.6rem 1rem;
+  }
+
+  .header__badge {
+    display: none;
+  }
+
+  .main {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .scale-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .scale-row__name {
+    text-align: left;
+    width: auto;
+  }
+
+  .status-grid,
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .semantic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .swatch--sm {
+    width: 28px;
+    height: 28px;
+    font-size: 0.5rem;
+  }
+
+  .hooks-panel {
+    padding: 1rem;
+  }
+
+  .config-grid,
+  .create-theme-demo {
+    grid-template-columns: 1fr;
+  }
+}
