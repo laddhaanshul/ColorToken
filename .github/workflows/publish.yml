@@ -203,7 +203,7 @@ jobs:
       - name: Verify package is available
         run: |
           echo "Waiting for npm registry to propagate..."
-          sleep 30
+          sleep 60
           VERSION="${{ needs.prepare.outputs.version }}"
           npm view ${{ env.PACKAGE_NAME }}@${VERSION} version
           echo "Package ${{ env.PACKAGE_NAME }}@${VERSION} is available on npm."
