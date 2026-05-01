@@ -9,7 +9,7 @@
  *
  * @example
  * ```tsx
- * import { ColorProvider, useTheme, useColorTokens } from '@color-tokens/core';
+ * import { ColorProvider, useTheme, useColorTokens } from '@laddhaanshul/color-tokens';
  *
  * function App() {
  *   return (

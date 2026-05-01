@@ -1,11 +1,11 @@
 /* ================================================================== */
-/*  @color-tokens/core — Web Example App                                */
+/*  @laddhaanshul/color-tokens — Web Example App                                */
 /*  Demonstrates EVERY export from the package                          */
 /* ================================================================== */
 
 import { useState, useEffect, useMemo, type CSSProperties } from 'react';
 
-// ─── ALL exports from @color-tokens/core ────────────────────────────
+// ─── ALL exports from @laddhaanshul/color-tokens ────────────────────────────
 // Tokens
 import {
   primitiveColors,
@@ -15,7 +15,7 @@ import {
   type ColorShade,
   type SemanticColorTheme,
   type SemanticColorCategory,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Utility Functions
 import {
@@ -30,14 +30,14 @@ import {
   getLuminance,
   getContrastRatio,
   meetsWcagAA,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Configuration
 import {
   defaultConfig,
   resolveConfig,
   type ColorTokensConfig,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Provider & Hooks
 import {
@@ -50,7 +50,7 @@ import {
   createTheme,
   type ColorProviderProps,
   type ThemeContextValue,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -748,7 +748,7 @@ function AppInner() {
         borderColor: 'var(--ct-border-default)',
         color: 'var(--ct-foreground-secondary)',
       }}>
-        Built with <strong>@color-tokens/core</strong> &middot; Vite + React + TypeScript
+        Built with <strong>@laddhaanshul/color-tokens</strong> &middot; Vite + React + TypeScript
       </footer>
     </div>
   );

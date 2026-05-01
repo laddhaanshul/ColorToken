@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 /**
- * @color-tokens/core — Reusable Header Component
+ * @laddhaanshul/color-tokens — Reusable Header Component
  */
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $pageTitle ?? '@color-tokens/core — Universal Color Token System' ?></title>
+  <title><?= $pageTitle ?? '@laddhaanshul/color-tokens — Universal Color Token System' ?></title>
   <meta name="description" content="Universal color token system for React and React Native. Primitive and semantic tokens with full light/dark mode support, zero dependencies.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
   <link rel="stylesheet" href="<?= $baseUrl ?? '.' ?>/css/style.css">
@@ -30,7 +30,7 @@
             <circle cx="24" cy="24" r="5" fill="#F97316"/>
           </svg>
         </span>
-        <span class="logo-text">@color-tokens/core</span>
+        <span class="logo-text">@laddhaanshul/color-tokens</span>
       </a>
 
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">

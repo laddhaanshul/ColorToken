@@ -1,6 +1,6 @@
 # Web Example — React + Vite + TypeScript
 
-A complete example project demonstrating how to use `@color-tokens/core` in a React web application built with Vite.
+A complete example project demonstrating how to use `@laddhaanshul/color-tokens` in a React web application built with Vite.
 
 ## Features Demonstrated
 
@@ -62,7 +62,7 @@ web/
 
 ## How It Works
 
-1. `App.tsx` imports `lightSemanticColors` and `darkSemanticColors` from `@color-tokens/core`
+1. `App.tsx` imports `lightSemanticColors` and `darkSemanticColors` from `@laddhaanshul/color-tokens`
 2. A `useTheme` hook manages the current theme state (light or dark)
 3. `tokensToCssVars()` converts the active token set to CSS custom properties
 4. A `useEffect` applies these variables to `document.documentElement`

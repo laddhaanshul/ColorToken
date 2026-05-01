@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTheme } from '../theme/ThemeContext';
-import { hexToRgb, getContrastRatio } from '@color-tokens/core';
+import { hexToRgb, getContrastRatio } from '@laddhaanshul/color-tokens';
 
 // ─── Status definitions ─────────────────────────────────────
 

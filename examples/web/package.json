@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@color-tokens/core": "*",
+    "@laddhaanshul/color-tokens": "*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

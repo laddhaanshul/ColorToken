@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API documentation for all exports from `@color-tokens/core`.
+Complete API documentation for all exports from `@laddhaanshul/color-tokens`.
 
 ## Token Exports
 
@@ -11,7 +11,7 @@ The foundational color palette containing 22 color scales with 11 shades each (5
 **Available Color Scales:** gray, slate, zinc, neutral, stone, red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose
 
 ```ts
-import { primitiveColors } from '@color-tokens/core';
+import { primitiveColors } from '@laddhaanshul/color-tokens';
 
 const blue500 = primitiveColors.blue[500];  // '#3B82F6'
 const gray900 = primitiveColors.gray[900];  // '#111827'
@@ -25,7 +25,7 @@ Semantic color tokens optimized for light backgrounds. All values are hex string
 **Categories:** background, foreground, border, brand, status, surface, interactive, nav, chart, shadow
 
 ```ts
-import { lightSemanticColors } from '@color-tokens/core';
+import { lightSemanticColors } from '@laddhaanshul/color-tokens';
 
 lightSemanticColors.brand.primary;     // '#2563EB'
 lightSemanticColors.status.success;    // '#16A34A'
@@ -37,7 +37,7 @@ lightSemanticColors.surface.default;   // '#FFFFFF'
 Semantic color tokens optimized for dark backgrounds. Same category structure as light mode, but with adjusted values for proper contrast and visual hierarchy.
 
 ```ts
-import { darkSemanticColors } from '@color-tokens/core';
+import { darkSemanticColors } from '@laddhaanshul/color-tokens';
 
 darkSemanticColors.brand.primary;      // '#60A5FA'
 darkSemanticColors.background.primary; // '#030712'

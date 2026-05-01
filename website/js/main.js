@@ -1,5 +1,5 @@
 /**
- * @color-tokens/core — Main JavaScript
+ * @laddhaanshul/color-tokens — Main JavaScript
  *
  * Handles:
  *  - Theme toggle (light/dark)
@@ -120,7 +120,7 @@
     btn.addEventListener('click', async () => {
       const block = btn.closest('.install-block');
       const code = block ? $('code', block) : null;
-      const text = code ? code.textContent.trim() : 'npm install @color-tokens/core';
+      const text = code ? code.textContent.trim() : 'npm install @laddhaanshul/color-tokens';
 
       try {
         await copyText(text);

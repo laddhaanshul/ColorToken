@@ -4,7 +4,7 @@
 
 ### Overview
 
-The `color-tokens-assistant` skill enables AI assistants to work effectively with the `@color-tokens/core` package. It provides specialized knowledge about the token system, including all available tokens, utility functions, platform-specific patterns, and best practices.
+The `color-tokens-assistant` skill enables AI assistants to work effectively with the `@laddhaanshul/color-tokens` package. It provides specialized knowledge about the token system, including all available tokens, utility functions, platform-specific patterns, and best practices.
 
 ### Skill Definition
 
@@ -13,7 +13,7 @@ skill:
   name: color-tokens-assistant
   version: 1.0.0
   description: >
-    Provides comprehensive knowledge about @color-tokens/core for both
+    Provides comprehensive knowledge about @laddhaanshul/color-tokens for both
     React and React Native platforms. Covers primitive and semantic tokens,
     utility functions, theming patterns, and accessibility guidelines.
   triggers:
@@ -30,7 +30,7 @@ skill:
     - react-native
     - expo
   dependencies:
-    - @color-tokens/core
+    - @laddhaanshul/color-tokens
 ```
 
 ### Knowledge Base

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 /**
- * @color-tokens/core — Reusable Footer Component
+ * @laddhaanshul/color-tokens — Reusable Footer Component
  */
 ?>
   </main>
@@ -19,7 +19,7 @@
                 <circle cx="24" cy="24" r="5" fill="#F97316"/>
               </svg>
             </span>
-            <span class="logo-text">@color-tokens/core</span>
+            <span class="logo-text">@laddhaanshul/color-tokens</span>
           </a>
           <p class="footer-tagline">
             Universal color token system for React &amp; React Native.
@@ -40,8 +40,8 @@
           <h4>Package</h4>
           <ul>
             <li>
-              <a href="https://www.npmjs.com/package/@color-tokens/core" target="_blank" rel="noopener noreferrer">
-                npm @color-tokens/core
+              <a href="https://www.npmjs.com/package/@laddhaanshul/color-tokens" target="_blank" rel="noopener noreferrer">
+                npm @laddhaanshul/color-tokens
               </a>
             </li>
             <li>

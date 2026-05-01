@@ -1,6 +1,6 @@
 # React Native Example — Expo + TypeScript
 
-A complete example project demonstrating how to use `@color-tokens/core` in a React Native application built with Expo.
+A complete example project demonstrating how to use `@laddhaanshul/color-tokens` in a React Native application built with Expo.
 
 ## Features Demonstrated
 
@@ -78,6 +78,6 @@ react-native/
 
 ## Notes on the react-native Package Field
 
-The `package.json` of `@color-tokens/core` includes a `"react-native"` field that points to a dedicated native build (`dist/index.native.js`). Metro bundler automatically resolves this field before `"main"` and `"module"`, ensuring compatibility with React Native's module system. The native build excludes DOM-specific types to prevent type errors.
+The `package.json` of `@laddhaanshul/color-tokens` includes a `"react-native"` field that points to a dedicated native build (`dist/index.native.js`). Metro bundler automatically resolves this field before `"main"` and `"module"`, ensuring compatibility with React Native's module system. The native build excludes DOM-specific types to prevent type errors.
 
-In the monorepo, `metro.config.js` configures Metro to resolve `@color-tokens/core` from the `packages/color-tokens` directory via `watchFolders` and `extraNodeModules`. This means you can import from `@color-tokens/core` exactly the same way in both web and React Native projects — the bundler handles platform-specific resolution transparently.
+In the monorepo, `metro.config.js` configures Metro to resolve `@laddhaanshul/color-tokens` from the `packages/color-tokens` directory via `watchFolders` and `extraNodeModules`. This means you can import from `@laddhaanshul/color-tokens` exactly the same way in both web and React Native projects — the bundler handles platform-specific resolution transparently.

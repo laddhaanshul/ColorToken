@@ -4,7 +4,7 @@ import {
   lightSemanticColors,
   darkSemanticColors,
   type SemanticColorTheme,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // ─── Types ──────────────────────────────────────────────────
 

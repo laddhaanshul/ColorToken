@@ -1,10 +1,10 @@
-# Getting Started with @color-tokens/core
+# Getting Started with @laddhaanshul/color-tokens
 
-Welcome to the getting started guide for `@color-tokens/core`. This document walks you through the installation process, basic usage patterns, and project setup for both React web and React Native applications.
+Welcome to the getting started guide for `@laddhaanshul/color-tokens`. This document walks you through the installation process, basic usage patterns, and project setup for both React web and React Native applications.
 
 ## Prerequisites
 
-Before installing `@color-tokens/core`, ensure you have the following prerequisites in place:
+Before installing `@laddhaanshul/color-tokens`, ensure you have the following prerequisites in place:
 
 - **Node.js** 16 or higher installed on your system
 - **npm** 7 or higher, **yarn** 1.22 or higher, or **pnpm** 6 or higher as your package manager
@@ -12,20 +12,20 @@ Before installing `@color-tokens/core`, ensure you have the following prerequisi
 
 ## Installation
 
-You can install `@color-tokens/core` using any of the major package managers. Open your terminal, navigate to your project root, and run one of the following commands:
+You can install `@laddhaanshul/color-tokens` using any of the major package managers. Open your terminal, navigate to your project root, and run one of the following commands:
 
 ```bash
 # Using npm
-npm install @color-tokens/core
+npm install @laddhaanshul/color-tokens
 
 # Using yarn
-yarn add @color-tokens/core
+yarn add @laddhaanshul/color-tokens
 
 # Using pnpm
-pnpm add @color-tokens/core
+pnpm add @laddhaanshul/color-tokens
 ```
 
-Since `@color-tokens/core` has zero runtime dependencies, the installation process is fast and lightweight. The package ships with TypeScript type definitions bundled, so no separate `@types` package is needed.
+Since `@laddhaanshul/color-tokens` has zero runtime dependencies, the installation process is fast and lightweight. The package ships with TypeScript type definitions bundled, so no separate `@types` package is needed.
 
 ### Installing from the monorepo (development)
 
@@ -39,10 +39,10 @@ cd packages/color-tokens && npm run build
 
 ## Verifying the Installation
 
-After installation, you can verify that the package is correctly installed by checking your `package.json` file. You should see `@color-tokens/core` listed under `dependencies` with the installed version number. Additionally, you can create a quick test file to confirm the imports work as expected:
+After installation, you can verify that the package is correctly installed by checking your `package.json` file. You should see `@laddhaanshul/color-tokens` listed under `dependencies` with the installed version number. Additionally, you can create a quick test file to confirm the imports work as expected:
 
 ```tsx
-import { primitiveColors, lightSemanticColors, withOpacity } from '@color-tokens/core';
+import { primitiveColors, lightSemanticColors, withOpacity } from '@laddhaanshul/color-tokens';
 
 console.log(primitiveColors.blue[500]); // '#3B82F6'
 console.log(lightSemanticColors.brand.primary); // '#2563EB'
@@ -55,7 +55,7 @@ In a React web application, the most common pattern is to apply color tokens as 
 
 ```tsx
 import { useEffect } from 'react';
-import { lightSemanticColors, tokensToCssVars } from '@color-tokens/core';
+import { lightSemanticColors, tokensToCssVars } from '@laddhaanshul/color-tokens';
 
 function App() {
   useEffect(() => {
@@ -80,13 +80,13 @@ function App() {
 
 ## Basic Usage — React Native
 
-> **Monorepo note:** When running the React Native example inside the monorepo, make sure you run `npm install` from the repository root first. The `metro.config.js` in the example project ensures Metro can resolve `@color-tokens/core` from the monorepo's `packages/` directory.
+> **Monorepo note:** When running the React Native example inside the monorepo, make sure you run `npm install` from the repository root first. The `metro.config.js` in the example project ensures Metro can resolve `@laddhaanshul/color-tokens` from the monorepo's `packages/` directory.
 
 React Native applications use `StyleSheet.create()`: for styling, which means CSS custom properties are not available. Instead, you apply the token values directly as style properties. The tokens are plain string values (hex colors), so they work perfectly with React Native's style system:
 
 ```tsx
 import { StyleSheet, View, Text } from 'react-native';
-import { lightSemanticColors } from '@color-tokens/core';
+import { lightSemanticColors } from '@laddhaanshul/color-tokens';
 
 export default function App() {
   const colors = lightSemanticColors;

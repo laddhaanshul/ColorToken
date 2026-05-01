@@ -1,4 +1,4 @@
-# @color-tokens/core
+# @laddhaanshul/color-tokens
 
 > Universal color token system for **React** and **React Native** with 22 primitive color scales, 10 semantic token categories, light/dark theme management, CSS variable injection, and 11 utility functions — all from a single npm package.
 
@@ -34,13 +34,13 @@
 
 ```bash
 # npm
-npm install @color-tokens/core
+npm install @laddhaanshul/color-tokens
 
 # yarn
-yarn add @color-tokens/core
+yarn add @laddhaanshul/color-tokens
 
 # pnpm
-pnpm add @color-tokens/core
+pnpm add @laddhaanshul/color-tokens
 ```
 
 **Peer dependency:** `react >= 16.8.0` (hooks support required).
@@ -52,7 +52,7 @@ pnpm add @color-tokens/core
 ### With Provider (Recommended)
 
 ```tsx
-import { ColorProvider, useTheme, useToken } from '@color-tokens/core';
+import { ColorProvider, useTheme, useToken } from '@laddhaanshul/color-tokens';
 
 function App() {
   return (
@@ -94,7 +94,7 @@ function MainContent() {
 ### Without Provider (Direct Imports)
 
 ```tsx
-import { lightSemanticColors, darkSemanticColors, withOpacity } from '@color-tokens/core';
+import { lightSemanticColors, darkSemanticColors, withOpacity } from '@laddhaanshul/color-tokens';
 
 const buttonStyle = {
   backgroundColor: lightSemanticColors.brand.primary,
@@ -110,7 +110,7 @@ const buttonStyle = {
 The `<ColorProvider>` wraps your app (or a subtree) and provides color theme state via React context. It supports light/dark/system modes, live system preference detection, custom token overrides, and automatic CSS variable injection.
 
 ```tsx
-import { ColorProvider } from '@color-tokens/core';
+import { ColorProvider } from '@laddhaanshul/color-tokens';
 
 <ColorProvider
   defaultTheme="system"          // 'light' | 'dark' | 'system'
@@ -154,7 +154,7 @@ The `config` prop accepts a `ColorTokensConfig` object:
 #### Config Example
 
 ```tsx
-import { ColorProvider, defaultConfig } from '@color-tokens/core';
+import { ColorProvider, defaultConfig } from '@laddhaanshul/color-tokens';
 
 <ColorProvider
   config={{
@@ -372,7 +372,7 @@ function StatusBadge({ type }: { type: 'success' | 'warning' | 'error' | 'info' 
 ### Usage
 
 ```tsx
-import { primitiveColors } from '@color-tokens/core';
+import { primitiveColors } from '@laddhaanshul/color-tokens';
 
 const blue500 = primitiveColors.blue[500];      // '#3B82F6'
 const red100 = primitiveColors.red[100];         // '#FEE2E2'
@@ -546,7 +546,7 @@ Shadow and glow colors.
 ### Usage
 
 ```tsx
-import { lightSemanticColors, darkSemanticColors } from '@color-tokens/core';
+import { lightSemanticColors, darkSemanticColors } from '@laddhaanshul/color-tokens';
 
 // Access any token
 lightSemanticColors.brand.primary;          // '#2563EB'
@@ -695,7 +695,7 @@ meetsWcagAA('#999999', '#FFFFFF', true);    // true (2.85:1 > 3:1 for large text
 Create custom semantic themes with partial overrides. Works outside the provider — useful for generating themed stylesheets or computing tokens at build time.
 
 ```tsx
-import { createTheme } from '@color-tokens/core';
+import { createTheme } from '@laddhaanshul/color-tokens';
 
 const { light, dark } = createTheme({
   light: {
@@ -761,7 +761,7 @@ Use them in CSS or styled-components:
 
 ```tsx
 // Tailwind CSS integration
-import { tokensToCssVars, lightSemanticColors } from '@color-tokens/core';
+import { tokensToCssVars, lightSemanticColors } from '@laddhaanshul/color-tokens';
 
 // tailwind.config.js
 export default {
@@ -785,7 +785,7 @@ When the theme changes, all CSS variables update automatically.
 The package automatically detects React Native environments via the `"react-native"` field in `package.json`. Metro bundler loads the native entry point which uses the `Appearance` API for system theme detection.
 
 ```tsx
-import { ColorProvider, useTheme, useColorTokens, useToken } from '@color-tokens/core';
+import { ColorProvider, useTheme, useColorTokens, useToken } from '@laddhaanshul/color-tokens';
 import { View, Text, StyleSheet, Button, Appearance } from 'react-native';
 
 function App() {
@@ -883,7 +883,7 @@ import {
   createTheme,
   defaultConfig,
   resolveConfig,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Direct token access
 const primary = lightSemanticColors.brand.primary;

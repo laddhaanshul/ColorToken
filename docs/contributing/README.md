@@ -1,6 +1,6 @@
-# Contributing to @color-tokens/core
+# Contributing to @laddhaanshul/color-tokens
 
-Thank you for your interest in contributing to `@color-tokens/core`! This document outlines the contribution process, coding standards, and development workflow for the project.
+Thank you for your interest in contributing to `@laddhaanshul/color-tokens`! This document outlines the contribution process, coding standards, and development workflow for the project.
 
 ## Development Setup
 

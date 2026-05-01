@@ -5,7 +5,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "paths": {
-      "@color-tokens/core": [
+      "@laddhaanshul/color-tokens": [
         "../../packages/color-tokens/src"
       ]
     }

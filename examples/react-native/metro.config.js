@@ -1,7 +1,7 @@
 /**
  * Metro configuration for the React Native example.
  *
- * Resolves @color-tokens/core from the monorepo packages/ directory.
+ * Resolves @laddhaanshul/color-tokens from the monorepo packages/ directory.
  * Without this, Metro cannot follow `file:` symlinked dependencies.
  */
 // examples/react-native/metro.config.js
@@ -24,7 +24,7 @@ config.resolver.nodeModulesPaths = [
 config.resolver.blacklistRE = /packages\/.*\/node_modules\/(react|react-native)\/.*/;
 
 config.resolver.extraNodeModules = {
-  '@color-tokens/core': path.resolve(monorepoRoot, 'packages/color-tokens'),
+  '@laddhaanshul/color-tokens': path.resolve(monorepoRoot, 'packages/color-tokens'),
   'react': path.resolve(projectRoot, 'node_modules/react'),
   'react-native': path.resolve(projectRoot, 'node_modules/react-native'),
 };

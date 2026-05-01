@@ -1,6 +1,6 @@
 # Documentation
 
-Welcome to the `@color-tokens/core` documentation hub. This folder contains detailed guides and references for every aspect of the color token system.
+Welcome to the `@laddhaanshul/color-tokens` documentation hub. This folder contains detailed guides and references for every aspect of the color token system.
 
 ## Documentation Index
 
@@ -14,7 +14,7 @@ Welcome to the `@color-tokens/core` documentation hub. This folder contains deta
 
 ## Quick Links
 
-- **npm Package:** [@color-tokens/core](https://www.npmjs.com/package/@color-tokens/core)
+- **npm Package:** [@laddhaanshul/color-tokens](https://www.npmjs.com/package/@laddhaanshul/color-tokens)
 - **GitHub Repository:** [ColorToken](https://github.com/laddhaanshul/ColorToken)
 - **Website:** [colortokens.anshulladdha.in](https://colortokens.anshulladdha.in)
 - **PHP Promotional Site:** See `/website` directory

@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 /**
- * @color-tokens/core — Promotional Website
+ * @laddhaanshul/color-tokens — Promotional Website
  * Main landing page
  */
 
 $baseUrl = '.';
-$pageTitle = '@color-tokens/core — Universal Color Token System for React & React Native';
+$pageTitle = '@laddhaanshul/color-tokens — Universal Color Token System for React & React Native';
 
 require_once __DIR__ . '/includes/header.php';
 ?>
@@ -30,7 +30,7 @@ require_once __DIR__ . '/includes/header.php';
 
     <div class="hero-actions">
       <div class="install-block">
-        <code>$ npm install @color-tokens/core</code>
+        <code>$ npm install @laddhaanshul/color-tokens</code>
         <button class="copy-btn" aria-label="Copy install command">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
@@ -66,7 +66,7 @@ require_once __DIR__ . '/includes/header.php';
 <section class="features" id="features">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Why @color-tokens/core?</h2>
+      <h2 class="section-title">Why @laddhaanshul/color-tokens?</h2>
       <p class="section-subtitle">
         Everything you need for consistent, accessible color systems across web and mobile.
       </p>
@@ -199,7 +199,7 @@ require_once __DIR__ . '/includes/header.php';
   primitiveColors,
   withOpacity,
   tokensToCssVars
-} <span class="hl-kw">from</span> <span class="hl-str">'@color-tokens/core'</span>;
+} <span class="hl-kw">from</span> <span class="hl-str">'@laddhaanshul/color-tokens'</span>;
 
 <span class="hl-cm">// Apply semantic tokens as CSS custom properties</span>
 <span class="hl-kw">const</span> <span class="hl-const">cssVars</span> = <span class="hl-fn">tokensToCssVars</span>(lightSemanticColors, <span class="hl-str">'ct'</span>);
@@ -243,7 +243,7 @@ require_once __DIR__ . '/includes/header.php';
   withOpacity,
   tokensToReactNativeStyles,
   meetsWcagAA
-} <span class="hl-kw">from</span> <span class="hl-str">'@color-tokens/core'</span>;
+} <span class="hl-kw">from</span> <span class="hl-str">'@laddhaanshul/color-tokens'</span>;
 
 <span class="hl-cm">// Convert tokens to flat RN-compatible styles</span>
 <span class="hl-kw">const</span> <span class="hl-const">rnStyles</span> = <span class="hl-fn">tokensToReactNativeStyles</span>(lightSemanticColors);
@@ -294,7 +294,7 @@ require_once __DIR__ . '/includes/header.php';
   getLuminance,
   getContrastRatio,
   meetsWcagAA
-} <span class="hl-kw">from</span> <span class="hl-str">'@color-tokens/core'</span>;
+} <span class="hl-kw">from</span> <span class="hl-str">'@laddhaanshul/color-tokens'</span>;
 
 <span class="hl-cm">// Color conversion</span>
 <span class="hl-fn">hexToRgb</span>(<span class="hl-str">'#3B82F6'</span>);
@@ -348,11 +348,11 @@ require_once __DIR__ . '/includes/header.php';
         <div class="step-content">
           <h3>Install the package</h3>
           <p>Use npm, yarn, or pnpm &mdash; whatever your project uses.</p>
-          <pre><code>npm install @color-tokens/core
+          <pre><code>npm install @laddhaanshul/color-tokens
 # or
-yarn add @color-tokens/core
+yarn add @laddhaanshul/color-tokens
 # or
-pnpm add @color-tokens/core</code></pre>
+pnpm add @laddhaanshul/color-tokens</code></pre>
         </div>
       </div>
 
@@ -369,7 +369,7 @@ pnpm add @color-tokens/core</code></pre>
   primitiveColors,
   lightSemanticColors,
   darkSemanticColors
-} from '@color-tokens/core';</code></pre>
+} from '@laddhaanshul/color-tokens';</code></pre>
         </div>
       </div>
 

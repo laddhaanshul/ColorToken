@@ -1,5 +1,5 @@
 {
-  "name": "@color-tokens/core",
+  "name": "@laddhaanshul/color-tokens",
   "version": "1.0.0",
   "description": "Universal color token system for React and React Native. 22 primitive color scales, 10 semantic token categories, light/dark themes, React Context provider, CSS variable injection, and 11 utility functions.",
   "main": "dist/index.js",

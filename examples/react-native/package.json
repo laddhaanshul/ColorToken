@@ -1,7 +1,7 @@
 {
   "name": "color-tokens-rn-example",
   "version": "1.0.0",
-  "description": "React Native (Expo) example demonstrating @color-tokens/core usage",
+  "description": "React Native (Expo) example demonstrating @laddhaanshul/color-tokens usage",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
@@ -13,7 +13,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@color-tokens/core": "*",
+    "@laddhaanshul/color-tokens": "*",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",

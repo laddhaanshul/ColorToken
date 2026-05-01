@@ -1,6 +1,6 @@
-# @color-tokens/core — Promotional Website
+# @laddhaanshul/color-tokens — Promotional Website
 
-A professional, modern PHP website promoting the [`@color-tokens/core`](https://www.npmjs.com/package/@color-tokens/core) npm package — a universal color token system for React and React Native.
+A professional, modern PHP website promoting the [`@laddhaanshul/color-tokens`](https://www.npmjs.com/package/@laddhaanshul/color-tokens) npm package — a universal color token system for React and React Native.
 
 ## Quick Start
 
@@ -82,7 +82,7 @@ Search and replace `https://github.com/laddhaanshul/ColorToken` across all files
 
 ```php
 <?php
-$pageTitle = 'Documentation — @color-tokens/core';
+$pageTitle = 'Documentation — @laddhaanshul/color-tokens';
 require_once __DIR__ . '/includes/header.php';
 ?>
 <!-- Your content here -->

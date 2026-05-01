@@ -1,7 +1,7 @@
 /**
- * @color-tokens/core — React Native (Expo) Example
+ * @laddhaanshul/color-tokens — React Native (Expo) Example
  *
- * Demonstrates EVERY export from @color-tokens/core.
+ * Demonstrates EVERY export from @laddhaanshul/color-tokens.
  * Uses the native ColorProvider (Appearance API) instead of a local ThemeProvider.
  */
 
@@ -17,7 +17,7 @@ import {
   FlatList,
 } from 'react-native';
 
-// ─── ALL exports from @color-tokens/core ────────────────────────
+// ─── ALL exports from @laddhaanshul/color-tokens ────────────────────────
 // Tokens
 import {
   primitiveColors,
@@ -27,7 +27,7 @@ import {
   type ColorShade,
   type SemanticColorTheme,
   type SemanticColorCategory,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Utility Functions
 import {
@@ -42,14 +42,14 @@ import {
   getLuminance,
   getContrastRatio,
   meetsWcagAA,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Configuration
 import {
   defaultConfig,
   resolveConfig,
   type ColorTokensConfig,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 // Provider & Hooks
 import {
@@ -62,7 +62,7 @@ import {
   createTheme,
   type ColorProviderProps,
   type ThemeContextValue,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 /* ================================================================== */
 /*  Constants                                                          */
@@ -568,7 +568,7 @@ function AppInner() {
 
         {/* Header */}
         <View style={[styles.header, { backgroundColor: tokens.surface.default, borderColor: tokens.border.default }]}>
-          <Text style={[styles.title, { color: tokens.foreground.primary }]}>@color-tokens/core</Text>
+          <Text style={[styles.title, { color: tokens.foreground.primary }]}>@laddhaanshul/color-tokens</Text>
           <Text style={[styles.subtitle, { color: tokens.foreground.secondary }]}>React Native (Expo) Example</Text>
           <Text style={[styles.badge, { color: '#FFFFFF', backgroundColor: tokens.brand.primary }]}>
             All {SCALE_NAMES.length} exports

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 /**
- * @color-tokens/core — Color Palette Grid
+ * @laddhaanshul/color-tokens — Color Palette Grid
  *
  * Renders a live color palette preview using the exact primitive color
- * values from the @color-tokens/core npm package.
+ * values from the @laddhaanshul/color-tokens npm package.
  */
 
 $primitiveColors = [

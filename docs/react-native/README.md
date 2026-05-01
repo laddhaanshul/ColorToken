@@ -1,14 +1,14 @@
 # React Native Guide
 
-Advanced patterns and best practices for using `@color-tokens/core` in React Native and Expo projects.
+Advanced patterns and best practices for using `@laddhaanshul/color-tokens` in React Native and Expo projects.
 
 ## How the react-native Entry Point Works
 
-When Metro bundler resolves imports for `@color-tokens/core`, it checks the `"react-native"` field in `package.json` before the `"main"` and `"module"` fields. This field points to `dist/index.native.js`, which is built without DOM-specific types (no `"DOM"` in the `lib` compiler option). This prevents potential issues with Metro's module resolution and ensures type compatibility. The native build re-exports everything from the main build, so the API is identical between platforms.
+When Metro bundler resolves imports for `@laddhaanshul/color-tokens`, it checks the `"react-native"` field in `package.json` before the `"main"` and `"module"` fields. This field points to `dist/index.native.js`, which is built without DOM-specific types (no `"DOM"` in the `lib` compiler option). This prevents potential issues with Metro's module resolution and ensures type compatibility. The native build re-exports everything from the main build, so the API is identical between platforms.
 
 ## Expo Setup
 
-Using `@color-tokens/core` with Expo in the monorepo requires no special configuration beyond installing dependencies from the repository root and building the core package. The included `metro.config.js` handles module resolution automatically:
+Using `@laddhaanshul/color-tokens` with Expo in the monorepo requires no special configuration beyond installing dependencies from the repository root and building the core package. The included `metro.config.js` handles module resolution automatically:
 
 ```bash
 # From the monorepo root
@@ -20,7 +20,7 @@ cd examples/react-native && npx expo start
 The `metro.config.js` configures Metro with:
 - `watchFolders` pointing to the monorepo root so HMR picks up changes
 - `nodeModulesPaths` for both the example's and root's `node_modules`
-- `extraNodeModules` mapping `@color-tokens/core` to `packages/color-tokens`
+- `extraNodeModules` mapping `@laddhaanshul/color-tokens` to `packages/color-tokens`
 
 ## Platform-Specific Considerations
 
@@ -39,7 +39,7 @@ The recommended pattern for using color tokens with React Native's `StyleSheet.c
 
 ```tsx
 import { StyleSheet } from 'react-native';
-import { lightSemanticColors, withOpacity } from '@color-tokens/core';
+import { lightSemanticColors, withOpacity } from '@laddhaanshul/color-tokens';
 
 const styles = StyleSheet.create({
   screen: {
@@ -121,7 +121,7 @@ React Native provides built-in accessibility props that work with color tokens. 
 
 ```tsx
 import { View, Text } from 'react-native';
-import { lightSemanticColors, meetsWcagAA } from '@color-tokens/core';
+import { lightSemanticColors, meetsWcagAA } from '@laddhaanshul/color-tokens';
 
 function InfoBanner() {
   const textColor = lightSemanticColors.status.infoText;

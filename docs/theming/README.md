@@ -1,10 +1,10 @@
 # Theming Guide
 
-This guide covers how to implement light and dark mode theming in your React and React Native applications using `@color-tokens/core`.
+This guide covers how to implement light and dark mode theming in your React and React Native applications using `@laddhaanshul/color-tokens`.
 
 ## Understanding Light and Dark Modes
 
-`@color-tokens/core` provides two complete semantic token sets: `lightSemanticColors` and `darkSemanticColors`. Each set contains identical key structures but with values tuned for their respective background luminance. Dark mode tokens use lighter colors for elements that need to stand out, and darker colors for surfaces and backgrounds. The two sets are designed so you can swap between them instantly without changing any component logic.
+`@laddhaanshul/color-tokens` provides two complete semantic token sets: `lightSemanticColors` and `darkSemanticColors`. Each set contains identical key structures but with values tuned for their respective background luminance. Dark mode tokens use lighter colors for elements that need to stand out, and darker colors for surfaces and backgrounds. The two sets are designed so you can swap between them instantly without changing any component logic.
 
 ## React Web — CSS Variables Approach
 
@@ -19,7 +19,7 @@ import {
   darkSemanticColors,
   tokensToCssVars,
   type SemanticColorTheme,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 type Theme = 'light' | 'dark';
 
@@ -147,7 +147,7 @@ import {
   lightSemanticColors,
   darkSemanticColors,
   type SemanticColorTheme,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 type ThemeMode = 'light' | 'dark' | 'system';
 

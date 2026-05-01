@@ -4,7 +4,7 @@
 
 ### Description
 
-The `color-tokens-bot` is an AI agent designed to assist developers with the `@color-tokens/core` npm package. It can help with token selection, theme configuration, accessibility auditing, and code generation for both React web and React Native projects.
+The `color-tokens-bot` is an AI agent designed to assist developers with the `@laddhaanshul/color-tokens` npm package. It can help with token selection, theme configuration, accessibility auditing, and code generation for both React web and React Native projects.
 
 ### Capabilities
 

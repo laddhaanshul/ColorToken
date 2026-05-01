@@ -7,7 +7,7 @@
  *
  * @example
  * ```tsx
- * import { ColorProvider, defaultConfig } from '@color-tokens/core';
+ * import { ColorProvider, defaultConfig } from '@laddhaanshul/color-tokens';
  *
  * <ColorProvider config={{
  *   ...defaultConfig,

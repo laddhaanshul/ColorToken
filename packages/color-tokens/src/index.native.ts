@@ -1,5 +1,5 @@
 /**
- * @color-tokens/core — React Native Entry Point
+ * @laddhaanshul/color-tokens — React Native Entry Point
  *
  * This file serves as the React Native (Expo) specific entry point.
  * It exports all the same APIs as the web entry, but uses the native
@@ -11,7 +11,7 @@
  *
  * @example
  * ```tsx
- * import { ColorProvider, useTheme, useColorTokens } from '@color-tokens/core';
+ * import { ColorProvider, useTheme, useColorTokens } from '@laddhaanshul/color-tokens';
  *
  * function App() {
  *   return (

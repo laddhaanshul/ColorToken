@@ -7,7 +7,7 @@
  *
  * @example
  * ```tsx
- * import { ColorProvider, useTheme, useColorTokens } from '@color-tokens/core';
+ * import { ColorProvider, useTheme, useColorTokens } from '@laddhaanshul/color-tokens';
  *
  * function App() {
  *   return (
@@ -473,7 +473,7 @@ export function useToken(
  *
  * @example
  * ```tsx
- * import { createTheme, lightSemanticColors, darkSemanticColors } from '@color-tokens/core';
+ * import { createTheme, lightSemanticColors, darkSemanticColors } from '@laddhaanshul/color-tokens';
  *
  * const { light, dark } = createTheme({
  *   light: { brand: { primary: '#0066FF' } },

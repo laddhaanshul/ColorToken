@@ -1,13 +1,13 @@
-# @color-tokens/core
+# @laddhaanshul/color-tokens
 
 <p align="center">
   <strong>Universal Color Token System for React &amp; React Native</strong>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@color-tokens/core"><img src="https://img.shields.io/npm/v/@color-tokens/core.svg?style=flat-square" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/@color-tokens/core"><img src="https://img.shields.io/npm/dm/@color-tokens/core.svg?style=flat-square" alt="npm downloads"></a>
-  <a href="https://github.com/laddhaanshul/ColorToken/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@color-tokens/core.svg?style=flat-square" alt="license"></a>
+  <a href="https://www.npmjs.com/package/@laddhaanshul/color-tokens"><img src="https://img.shields.io/npm/v/@laddhaanshul/color-tokens.svg?style=flat-square" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@laddhaanshul/color-tokens"><img src="https://img.shields.io/npm/dm/@laddhaanshul/color-tokens.svg?style=flat-square" alt="npm downloads"></a>
+  <a href="https://github.com/laddhaanshul/ColorToken/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@laddhaanshul/color-tokens.svg?style=flat-square" alt="license"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.3+-blue.svg?style=flat-square" alt="TypeScript"></a>
   <a href="https://colortokens.anshulladdha.in"><img src="https://img.shields.io/badge/Website-Live-brightgreen.svg?style=flat-square" alt="Website"></a>
 </p>
@@ -16,7 +16,7 @@
 
 ## Overview
 
-`@color-tokens/core` is a zero-dependency, TypeScript-first color token system that works seamlessly across **React (web)** and **React Native (Expo)** projects. It provides a comprehensive set of primitive color scales, semantic tokens with light/dark mode support, and utility functions for color manipulation.
+`@laddhaanshul/color-tokens` is a zero-dependency, TypeScript-first color token system that works seamlessly across **React (web)** and **React Native (Expo)** projects. It provides a comprehensive set of primitive color scales, semantic tokens with light/dark mode support, and utility functions for color manipulation.
 
 The project is organized as an **npm workspaces monorepo** containing the core package, a Vite web example, an Expo React Native example, a PHP promotional website, and full documentation.
 
@@ -40,7 +40,7 @@ color-tokens-monorepo/
 ├── package.json                     # Root workspace config (npm workspaces)
 ├── .gitignore                       # Root ignore rules
 ├── packages/
-│   └── color-tokens/                # @color-tokens/core npm package
+│   └── color-tokens/                # @laddhaanshul/color-tokens npm package
 │       ├── src/
 │       │   ├── index.ts             # Web entry point
 │       │   ├── index.native.ts      # React Native entry point
@@ -80,13 +80,13 @@ color-tokens-monorepo/
 
 ```bash
 # npm
-npm install @color-tokens/core
+npm install @laddhaanshul/color-tokens
 
 # yarn
-yarn add @color-tokens/core
+yarn add @laddhaanshul/color-tokens
 
 # pnpm
-pnpm add @color-tokens/core
+pnpm add @laddhaanshul/color-tokens
 ```
 
 ### From this monorepo (development)
@@ -119,7 +119,7 @@ import {
   darkSemanticColors,
   tokensToCssVars,
   withOpacity,
-} from '@color-tokens/core';
+} from '@laddhaanshul/color-tokens';
 
 function App() {
   const isDark = false; // your dark mode state
@@ -153,7 +153,7 @@ function App() {
 
 ```tsx
 import { StyleSheet } from 'react-native';
-import { lightSemanticColors, withOpacity } from '@color-tokens/core';
+import { lightSemanticColors, withOpacity } from '@laddhaanshul/color-tokens';
 
 const styles = StyleSheet.create({
   container: {
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
 ### With ColorProvider (Recommended)
 
 ```tsx
-import { ColorProvider, useTheme, useToken } from '@color-tokens/core';
+import { ColorProvider, useTheme, useToken } from '@laddhaanshul/color-tokens';
 
 function App() {
   return (
