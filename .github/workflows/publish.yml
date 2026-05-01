@@ -69,24 +69,16 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
-        run: |
-          cd packages/color-tokens
-          npm ci
+        run: npm ci
 
       - name: Run type checking
-        run: |
-          cd packages/color-tokens
-          npm run typecheck
+        run: npm run typecheck --workspace=@color-tokens/core
 
       - name: Run linting
-        run: |
-          cd packages/color-tokens
-          npm run lint
+        run: npm run lint --workspace=@color-tokens/core
 
       - name: Run tests
-        run: |
-          cd packages/color-tokens
-          npm test
+        run: npm test --workspace=@color-tokens/core
 
   # ─── Build Package ───────────────────────────────────────
   build:
@@ -103,9 +95,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
-        run: |
-          cd packages/color-tokens
-          npm ci
+        run: npm ci
 
       - name: Update package version
         run: |
@@ -154,6 +144,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           registry-url: ${{ env.REGISTRY_URL }}
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Update package version
         run: |
